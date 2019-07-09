@@ -1,0 +1,29 @@
+{
+  "name": "Loftsystem-hw5",
+  "version": "1.0.0",
+  "description": "loftschool node-js final project",
+  "main": "index.js",
+  "repository": "https://github.com/Engoldo/Loftsystem-hw5.git",
+  "author": "Belov Pavel <belovpavel@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.0.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "formidable": "^1.2.1",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.6.3",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^2.2.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
