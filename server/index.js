@@ -11,7 +11,7 @@ const io = require("socket.io").listen(server);
 
 const routes = require("./routes.js");
 const PORT = process.env.PORT || 8080;
-let mongooseConfig = require("./model/mongooseConfig");
+let mongooseConfig = require("./models/mongooseConfig");
 const clients = {};
 
 mongooseConfig.init();
