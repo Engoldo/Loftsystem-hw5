@@ -9,6 +9,50 @@ const userCtrl = require("./controllers/userController");
 const saveUserImgCtrl = require("./controllers/saveUserImgController");
 const User = mongoose.model("user");
 
+/*
+router.get('/', (req, res, next) => {
+  const token = req.cookies.token;
+  console.log('token?', token);
+  if (!!token) {
+    User.findOne({ token }).then(user => {
+      if (user) {
+        req.logIn(user, err => {
+          if (err) next(err);
+        });
+      }
+      next();
+    });
+  } else {
+    next();
+  }
+});
+*/
+
+/*
+router.get('/', (req, res, next) => {
+  const {access_token} = req.cookies;
+  if (!access_token) {
+    next();
+    return;
+  }
+  User.findOne({access_token})
+    .then(user => {
+      console.log('UZER', user);
+      if (user) {
+        req.logIn(user, err => {
+          if (err) {
+            next(err);
+            return;
+          }
+          res.json(user);
+          return;
+        });
+      }
+      next();
+    })
+});
+*/
+
 router.post("/api/login", authCtrl.login);
 router.post("/api/saveNewUser", authCtrl.register);
 router.post("/api/authFromToken", authCtrl.authFromToken);
